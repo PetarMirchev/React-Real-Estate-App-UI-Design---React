@@ -1,9 +1,10 @@
+import Navbar from './components/Navbar/Navbar';
 import './layout.scss';
 
 function App() {
   return (
     <div className="layout">
-      <h1><a href="/">Hello Pepi</a> </h1>
+      <Navbar/>
     </div>
   );
 }
