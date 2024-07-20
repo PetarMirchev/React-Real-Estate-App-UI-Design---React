@@ -1,4 +1,4 @@
-
+@import "../../responsive.scss";
 
 nav {
     height: 100px;
@@ -7,7 +7,11 @@ nav {
     align-items: center;
 
     a {
-        transform: all 0.9s ease;
+        transition: all 0.4s ease;
+
+        @include sm { // hide line of links in small to r=be transit to burger
+            display: none;
+        }
 
         &:hover {
             scale: 1.05;
@@ -28,9 +32,19 @@ nav {
             gap: 10px;
             align-items: center;
 
-            .logo-icon-company {
+            .logo-icon-company { //img
                 width: 28px;
                 height: 28px;
+            }
+
+            .logo-text-company-name { //span
+                @include md { // remove for mid name of company
+                    display: none;  
+                }
+
+                @include sm { // remove for mid name of company
+                    display: initial;  
+                }
             }
         }
     }
@@ -42,6 +56,10 @@ nav {
         background-color: #fcf5f3;
         height: 100%;
 
+        @include md{
+            background-color: transparent;
+        }
+
         a{
             padding: 12px 24px;
             margin: 20px;
@@ -49,6 +67,48 @@ nav {
 
         .register {
             background-color: #f3b052;
+        }
+
+
+        .menuIcon { //burger icon for small windows
+            display: none;
+            z-index: 999;
+
+            img { // menuIcon>img
+                width: 36px;
+                height: 36px;
+                cursor: pointer;
+            }
+
+            @include sm { // remove for mid name of company
+                display: initial;  
+            }
+        }
+
+        .menu {
+            position: absolute;
+            top: 0;
+            right: -50%;
+            background-color: black;
+            color: white;
+            height: 100vh;
+            width: 50%; // haf of the screen to use when is shown
+            transition: all 1s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+
+            &.active{//on click show the black menu
+                right: 0;
+            }
+
+            @include sm {
+                a {
+                    display: initial;
+                }
+            }
         }
     }
 }
