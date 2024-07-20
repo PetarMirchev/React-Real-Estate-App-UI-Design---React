@@ -1,0 +1,26 @@
+@import "./responsive.scss";
+
+
+.layout {
+    height: 100vh;
+    max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    //usage of function from responsive.scss contain @media logic
+    //! to be work order need to from big to small !!
+    @include lg{
+        background-color: rgb(76, 140, 236);
+        max-width: 1280px;
+    }
+    @include md{
+        background-color: rgb(92, 87, 240);
+        max-width: 768px;
+    }
+    @include sm{
+        background-color: rgb(252, 100, 100);
+        max-width: 640px;
+    }
+}
