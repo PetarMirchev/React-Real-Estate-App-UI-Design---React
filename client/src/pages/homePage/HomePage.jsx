@@ -7,13 +7,13 @@ function HomePage() {
     <div className='homePage'>
       <div className="textContainer">
         <div className="wrapper">
-        <h1 className='title'>Find Real Estate & Get Your Dream Place!</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Debitis inventore minus non explicabo accusamus earum esse id 
-          praesentium nostrum voluptatem ipsa error repellat fugit ratione 
-          tempore quidem ab, delectus repellendus.
-        </p>
-        <SearchBar/>
+          <h1 className='title'>Find Real Estate & Get Your Dream Place!</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Debitis inventore minus non explicabo accusamus earum esse id 
+            praesentium nostrum voluptatem ipsa error repellat fugit ratione 
+            tempore quidem ab, delectus repellendus.
+          </p>
+          <SearchBar/>
           <div className="boxes">
             <div className="box">
               <h1>16+</h1>
@@ -38,5 +38,3 @@ function HomePage() {
 }
 
 export default HomePage
-
-//43.10
