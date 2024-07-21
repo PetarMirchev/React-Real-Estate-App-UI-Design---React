@@ -8,6 +8,8 @@
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
+    display: flex;
+    flex-direction: column;
 
     //usage of function from responsive.scss contain @media logic
     //! to be work order need to from big to small !!
@@ -22,5 +24,11 @@
     @include sm{
         background-color: rgb(252, 100, 100);
         max-width: 640px;
+    }
+
+
+    .content {
+        // background-color: gray;
+        flex: 1;
     }
 }
