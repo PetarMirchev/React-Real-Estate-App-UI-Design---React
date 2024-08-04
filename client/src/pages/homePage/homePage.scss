@@ -1,4 +1,4 @@
-
+@import "../../responsive.scss";
 
 .homePage {
     display: flex;
@@ -14,16 +14,36 @@
             justify-content: center;
             gap: 50px;
 
+            @include md {
+                padding: 0px;
+            }
+
+            @include sm {
+               justify-content: flex-start;
+            }
+
             .title {
                 font-size: 64px;
+
+                @include lg {
+                    font-size: 48px;
+                }
             }
 
             .boxes {
                 display: flex;
                 justify-content: space-between;
 
+                @include sm {
+                    display: none;
+                }
+
                 h1 {
                     font-size: 36px;
+
+                    @include lg {
+                        font-size: 31px;
+                    }
                 }
 
                 h2 {
@@ -40,10 +60,18 @@
         position: relative;
         display: flex;
         align-items: center;
+
+        @include md {
+            display: none;
+        }
     
         img {
             width: 100%;
             position: absolute;
         }  
+
+        @include lg {
+            width: 105%;
+        }
     }    
 }

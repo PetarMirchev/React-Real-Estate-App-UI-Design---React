@@ -33,10 +33,10 @@ const SearchBar = () => {
         <input type="text" name="location" placeholder='City Location...?' value=""/>
         <input type="number" name="minPrice" min={0} max={10000000} placeholder='Min Price?' value=""/>
         <input type="number" name="maxPrice" min={0} max={10000000} placeholder='Max Price?' value=""/>
+        <button>
+          <img src="./search.png" alt="search-icon"/>
+        </button>
       </form>
-      <button>
-        <img src="./search.png" alt="search-icon"/>
-      </button>
     </div>
   )
 }
