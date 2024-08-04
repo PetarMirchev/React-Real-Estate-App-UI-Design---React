@@ -2,6 +2,7 @@
 
 .searchBar {
     .type {
+
         button {
             padding: 16px 36px;
             border: 1px solid #999;
@@ -37,6 +38,7 @@
 
         @include sm {
             flex-direction: column;
+            border: none;
         }
 
         input {
@@ -51,13 +53,34 @@
                     width: 140px;
                 }
             }
+
+            @include md {  
+                width: 200px;
+                &:nth-child(2), &:nth-child(3) {
+                    width: 200px;
+                }
+            }
+
+            @include sm { 
+                width: auto;
+                padding: 20px;
+                border: 1px solid #999;
+
+                &:nth-child(2), &:nth-child(3) {
+                    width: auto;
+                }
+             }
         }
 
         button {
             border: none;
             cursor: pointer;
-            background-color: #fece51;
+            background-color: #f3b052;
             flex: 1;
+
+            @include sm {
+               padding: 10px;
+             }
         }
 
         img {
