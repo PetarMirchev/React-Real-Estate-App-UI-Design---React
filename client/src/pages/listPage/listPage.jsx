@@ -1,10 +1,12 @@
 import React from 'react';
 import "./listPage.scss";
 
-const listPage = () => {
+const ListPage = () => {
   return (
-    <div>listPage</div>
+    <div>
+      <h1>listPage</h1>
+    </div>
   )
 }
 
-export default listPage
+export default ListPage;
