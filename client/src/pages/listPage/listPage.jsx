@@ -1,4 +1,3 @@
-import React from 'react';
 import "./listPage.scss";
 import { listData } from '../../lib/dummyData';
 import Filter from '../../components/Filter/Filter';
@@ -6,7 +5,7 @@ import Card from '../../components/Card/Card';
 
 const ListPage = () => {
 
-  const data = listData;
+  const data = listData; //dummy data
 
   return (
     <div className='listPage'>

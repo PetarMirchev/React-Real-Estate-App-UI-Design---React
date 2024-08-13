@@ -8,8 +8,13 @@
 
         .wrapper {
             padding-right: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            overflow-y: scroll; //scroll effect on list
         }
     }
+
     .mapContainer {flex: 2; background-color: #fcf5f3;}
    
 }
