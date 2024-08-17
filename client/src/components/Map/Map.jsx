@@ -22,4 +22,4 @@ const Map = ({items}) => {
   )
 }
 
-export default Map
+export default Map;

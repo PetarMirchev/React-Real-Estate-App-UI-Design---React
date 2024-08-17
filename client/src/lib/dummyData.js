@@ -155,3 +155,28 @@ export const listData = [
       },
 
 ];
+
+
+
+export const singlePostDummyData = {
+  id: 1,
+  title: "Beautiful Apartment",
+  price: 1200,
+  images: [
+    "https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/4450337/pexels-photo-4450337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/1571452/pexels-photo-1571452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  ],
+  bedRooms: 2,
+  bathroom: 1,
+  size: 861,
+  latitude: 51.7392,
+  longitude: -0.1278,
+  city: "Chicago",
+  address: "1234 Random St.",
+  school: "250m away",
+  bus: "100m away",
+  restaurant: "75m away",
+  description: "Immerse yourself in unparalleled luxury, experience the epitome of urban living."
+}
