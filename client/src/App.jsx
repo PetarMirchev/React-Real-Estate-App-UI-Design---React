@@ -47,3 +47,6 @@ function App() {
 }
 
 export default App;
+
+
+// React Leaflet - for Map locations --> npm install react-leaflet

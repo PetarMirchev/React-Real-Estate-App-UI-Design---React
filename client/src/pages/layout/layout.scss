@@ -30,5 +30,6 @@
     .content {
         // background-color: gray;
         flex: 1;
+        height: calc(100vh - 100px); // remove top 100px from Navbar & use rest for content
     }
 }
