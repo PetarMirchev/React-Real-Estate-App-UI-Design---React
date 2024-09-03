@@ -3,6 +3,7 @@ import ListPage from './pages/listPage/listPage';
 import Layout from './pages/layout/layout';
 import SinglePage from './pages/singlePage/SinglePage';
 import AboutPage from './pages/aboutPage/AboutPage';
+import ProfilePage from './pages/profilePage/profilePage';
 
 import {createBrowserRouter,RouterProvider,} from "react-router-dom";
 
@@ -28,6 +29,10 @@ function App() {
         {
           path: "/:id",
           element: <SinglePage/>,
+        },
+        {
+          path: "/profilePage",
+          element: <ProfilePage/>,
         },
       ]
     },
