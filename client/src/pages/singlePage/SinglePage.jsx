@@ -79,20 +79,26 @@ const SinglePage = () => {
 
           <p className='title'>Nearby Places</p>
           <div className="listHorizontal">
-            <div className="size">
+            <div className="feature">
               <img src="./school.png" alt=""/>
-              <span>School</span>
-              <p>250m away</p>
+              <div className="featureText">
+                <span>School</span>
+                <p>250m away</p>
+              </div>
             </div>
-            <div className="size">
+            <div className="feature">
               <img src="./bus.png" alt=""/>
-              <span>Bus Stop</span>
-              <p>100m away</p>
+              <div className="featureText">
+                <span>Bus Stop</span>
+                <p>100m away</p>
+              </div>
             </div>
-            <div className="size">
+            <div className="feature">
               <img src="./restaurant.png" alt=""/>
-              <span>Restaurant</span>
-              <p>200m away</p>
+              <div className="featureText">
+                <span>Restaurant</span>
+                <p>200m away</p>
+              </div>
             </div>
           </div>
 
