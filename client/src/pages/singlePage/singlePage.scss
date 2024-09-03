@@ -1,14 +1,25 @@
-
+@import "../../responsive.scss";
 
 .singlePage {
     display: flex;
     height: 100%;
+
+    @include md {
+       flex-direction: column;
+       overflow: scroll;
+    }
 
     .details{
         flex: 3;
         //fix the problem whit not show full content when have more info or small screens
         height: 100%;
         overflow: scroll;
+
+        @include md {
+            flex: none;
+            height: max-content;
+            margin-bottom: 50px;
+         }
 
         .wrapper{
             padding-right: 50px;
@@ -89,6 +100,12 @@
         //fix the problem whit not show full content when have more info or small screens
         height: 100%;
         overflow: scroll;
+
+        @include md {
+            flex: none;
+            height: max-content;
+            margin-bottom: 50px;
+         }
 
         .wrapper{
             padding: 0px 20px;
@@ -181,4 +198,3 @@
         }
     }
 }
-
