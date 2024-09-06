@@ -89,11 +89,18 @@
             .chatMessage {
                 width: 50%;
 
-            }
-            .chatMessage.owner {
-                align-self: flex-end;
+                span{
+                    font-size: 12px;
+                    background-color: #f7c14b39;
+                    padding: 2px;
+                    border-radius: 5px;
+                }
             }
             
+            .chatMessage.owner {
+                align-self: flex-end;
+                text-align: right;
+            }            
         }
 
         .bottom {
