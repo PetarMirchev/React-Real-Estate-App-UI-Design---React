@@ -1,9 +1,17 @@
 import React from 'react';
-// import "./profilePage.scss";
+import "./profilePage.scss";
+
 
 const profilePage = () => {
   return (
-    <div>ProfilePage</div>
+    <div className='profilePage'>
+        <div className="details">
+            <div className="wrapper"></div>
+        </div>
+        <div className="chatContainer">
+            <div className="wrapper"></div>
+        </div>
+    </div>
   )
 }
 
