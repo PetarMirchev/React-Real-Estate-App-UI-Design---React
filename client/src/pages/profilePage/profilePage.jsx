@@ -1,6 +1,7 @@
 import React from 'react';
 import "./profilePage.scss";
 import List from '../../components/List/List';
+import Chat from '../../components/Chat/Chat';
 
 
 const profilePage = () => {
@@ -29,7 +30,9 @@ const profilePage = () => {
             </div>
         </div>
         <div className="chatContainer">
-            <div className="wrapper"></div>
+            <div className="wrapper">
+                <Chat/>
+            </div>
         </div>
     </div>
   )

@@ -6,6 +6,8 @@
 
     .details {
         flex: 3;
+        overflow-y: scroll;
+        padding-bottom: 50px;
 
         .wrapper {
             padding-right: 50px;
@@ -18,8 +20,21 @@
                 align-items: center;
                 justify-content: space-between;
 
+                span {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                }
+
                 h1 {
-                   font-weight: 300; 
+                   font-weight: 300;                   
+                }
+
+                button {
+                    padding: 12px 24px;
+                    background-color: #fece51;
+                    cursor: pointer;
+                    border: none;
                 }
             }
 
@@ -45,6 +60,7 @@
 
         .wrapper {
             padding: 0px 20px;
+            height: 100%;
         }
     }
 }
