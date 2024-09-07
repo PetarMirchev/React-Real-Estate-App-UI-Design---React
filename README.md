@@ -2,8 +2,11 @@
 React Real Estate App UI Design - React
 
 how to start the project?
+
 1 - download the project.
+
 2 - run "npm install" in 'clint' folderto install the modules.
+
 3 - use "npm start" to run the project
 
 ![img--1](https://github.com/user-attachments/assets/d2c2501a-a895-42c2-97e0-a28357df9c69)
